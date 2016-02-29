@@ -20,14 +20,6 @@ The gamma.cpp computes the gamma1 values after expanding the left hand side of t
 
 Then we used sbox.cpp program to get the values of alpha1 and alpha2 corresponding to alpha1 xor alpha2 and whose S(alpha1) and S(alpha2) is also equal to beta1 xor beta2 .For each permuted 6 bits of alpha1 we calculated value of alpha2 by taking xor of alpha1 and (alpha1 xor alpha2). After this we compare the value of S[alpha1] xor S[alpha2] with beta xor if these alpha1 and alpha2 satisfy these condition than these are the possible values of alpha1 and alpha2.
 
-CS641A  Team Name: noname
-
-Assignment-4  M Anirudh(13377)
-
-Sivasankar C Nair(13702)
-
-Khemkaran Sevta(13349)
-
 After this, We calculate key 6 by taking the xor of the candidate alpha1 with corresponding gamma1 and kept a counter for it. The key will repeat itself more frequently as compare to others. These frequencies are stored in key.txt file.
 
 
